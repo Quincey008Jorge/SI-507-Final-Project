@@ -1,4 +1,6 @@
-### Description
+# FlickrTool
+## Description
+This program is designed to help users to find the most popular places all around the world based on the photos uploaded to Flickr. Based on recommender analogous or customized drawing polygons, the user will get the information of all photos taking within a specific region, and the program will generate interactive plots and urls of photos for users to browse.
 ## Instructions
 This program requires 2 kinds of API Key, one is for accessing photos from Flickr, which needs to be filled in “FlickrWrapper.py”, the other is for accessing basemap from Mapbox, which needs to be filled in “index.html” in the templates folder. The program starts at main.py, which is also the main logics of the codes are located. Once the users click “run” in the main.py, the program will start and provide a few options for the users to access photos of certain place: 
 1. Recommendation
@@ -6,7 +8,7 @@ The code will generate a recommender analogous based on pre-defined binary tree 
 2. Free Exploration
 If the users don’t want to get recommendations from the program, they can select this option to explore and draw any area they want, or they can access the logs of areas where they search and record in the previous search, again the program will generate interactive plots using plotly based on the locations and hourly distribution of the photos in the region.
 ## Data Structure
-The data structure of the program is a binary tree, which is used to store the information of the regions the users have searched. The tree is stored in a json file, and the program will load the tree when it starts and save the tree when it ends. The tree is used to generate recommendations for the users, and the users can also add new regions to the tree. The tree is also used to store the logs of the users’ search, and the users can load the logs in the next search.
+The program uses binary tree structure to organize the flickr data. Each node in this tree is structured as a dictionary with three keys: "question", "yes", and "no". The "question" key at the root contains the initial question posed to the user, while in the leaf nodes, it contains an array with the location name and coordinates. The "yes" and "no" keys represent the subsequent paths based on the user's response, leading either to further questions (in a more complex tree) or terminating at leaf nodes that conclude the decision-making process.
 
 The example of the tree structure in this program like:
 {
