@@ -1,0 +1,19 @@
+{
+    "question": "Do you like places that snow all the time?",
+    "yes": {
+        "question": [
+            "Minnesota",
+            "-96.075269,46.012721,-92.863071,48.611106"
+        ],
+        "yes": null,
+        "no": null
+    },
+    "no": {
+        "question": [
+            "California",
+            "-118.512951,33.505042,-115.300753,36.103427"
+        ],
+        "yes": null,
+        "no": null
+    }
+}

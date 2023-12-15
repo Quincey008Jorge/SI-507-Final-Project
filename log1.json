@@ -1,0 +1,30 @@
+{
+    "question": "Do you like places that snow all the time?",
+    "yes": {
+        "question": "Is it near the Pacific Ocean?",
+        "yes": {
+            "question": [
+                "Minnesota",
+                "-96.075269,46.012721,-92.863071,48.611106"
+            ],
+            "yes": null,
+            "no": null
+        },
+        "no": {
+            "question": [
+                "Augusta",
+                "-70.785600,43.523136,-68.321190,45.027589"
+            ],
+            "yes": null,
+            "no": null
+        }
+    },
+    "no": {
+        "question": [
+            "California",
+            "-118.512951,33.505042,-115.300753,36.103427"
+        ],
+        "yes": null,
+        "no": null
+    }
+}
