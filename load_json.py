@@ -45,7 +45,6 @@ class TreeConverter:
             tree_data = json.load(file)
         return convert_json(tree_data)
 
-
 if __name__ == "__main__":
     startTree = (
     "Do you like places that snow all the time?",
@@ -58,6 +57,6 @@ if __name__ == "__main__":
     json_data = converter.tree_to_json(startTree)
     print("JSON Format:\n", json_data)
 
-    # Convert JSON back to tree
-    converted_tree = converter.json_to_tree(json_data)
+    # Convert JSON file back to tree and save to file
+    converted_tree = converter.json_to_tree("startTree.json")
     print("\nConverted Tree:", converted_tree)
