@@ -11,6 +11,7 @@ If the users don’t want to get recommendations from the program, they can sele
 The program uses binary tree structure to organize the flickr data. Each node in this tree is structured as a dictionary with three keys: "question", "yes", and "no". The "question" key at the root contains the initial question posed to the user, while in the leaf nodes, it contains an array with the location name and coordinates. The "yes" and "no" keys represent the subsequent paths based on the user's response, leading either to further questions (in a more complex tree) or terminating at leaf nodes that conclude the decision-making process.
 
 The example of the tree structure in this program like:
+```python
 {
     "question": "Do you like places that snow all the time?",
     "yes": {
@@ -30,3 +31,4 @@ The example of the tree structure in this program like:
         "no": null
     }
 }
+``` 

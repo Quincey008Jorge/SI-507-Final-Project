@@ -49,6 +49,8 @@ def main():
         recommend_answer = input("How would you like to use this tool?\n1. Recommendation\n2. Free Exploration\n3. Exit\n")
         if recommend_answer == "3":
             print("Thank you for using this tool. Goodbye!")
+            os.remove("combined_distribution.html")
+            os.remove("photo_location.html")
             break
         while recommend_answer not in ["1", "2"]:
             recommend_answer = input("Your answer is not accepected, please answer again: ")
