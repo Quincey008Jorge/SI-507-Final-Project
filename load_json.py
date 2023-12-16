@@ -58,5 +58,5 @@ if __name__ == "__main__":
     print("JSON Format:\n", json_data)
 
     # Convert JSON file back to tree and save to file
-    converted_tree = converter.json_to_tree("startTree.json")
+    converted_tree = converter.json_to_tree("log1.json")
     print("\nConverted Tree:", converted_tree)
